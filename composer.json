@@ -20,7 +20,7 @@
         "yiisoft/yii2-swiftmailer": "*",
         "dmstr/yii2-adminlte-asset": "*",
         "ijackua/yii2-lepture-markdown-editor-widget": "dev-master",
-        "kartik-v/yii2-markdown": "dev-master"
+        "kartik-v/yii2-widget-select2": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -39,11 +39,5 @@
     },
     "scripts": {
         "post-install-cmd": "php init --env=Development --overwrite=n"
-    },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://packagist.phpcomposer.com"
-        }
     }
 }

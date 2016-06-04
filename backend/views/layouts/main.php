@@ -19,6 +19,8 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="../../plugins/iCheck/all.css">
 </head>
 <body class="hold-transition skin-black-light sidebar-mini">
 <?php $this->beginBody() ?>
@@ -158,6 +160,17 @@ AppAsset::register($this);
     </div><!-- ./wrapper -->
 
 <?php $this->endBody() ?>
+    <!-- iCheck 1.0.1 -->
+    <script src="/plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function () {
+        //Flat red color scheme for iCheck
+        $('.flat-red').iCheck({
+          checkboxClass: 'icheckbox_flat-green',
+          radioClass: 'iradio_flat-green'
+        });
+      });
+    </script>
 </body>
 </html>
 <?php $this->endPage() ?>

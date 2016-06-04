@@ -5,7 +5,7 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use backend\models\Content;
+use common\models\Content;
 
 /**
  * Index controller
@@ -14,7 +14,7 @@ class ContentController extends BaseController
 {
     public function actionIndex()
     {
-        $data = Content::find()->where(['class_id'=>11])->all();
+        $data = Content::find()->where(['status'=>1])->all();
         return $this->render('index', [
             'data' => $data,
         ]);
